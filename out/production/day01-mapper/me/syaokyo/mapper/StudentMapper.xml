@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 这里的namespace是mapper接口的路径 -->
+<mapper namespace="me.syaokyo.mapper.StudentMapper">
+    <select id="selectStuById" parameterType="java.lang.String" resultType="me.syaokyo.entity.Student">
+        select * from studentInfo where stuNo=#{aaa}
+    </select>
+    <select id="selectByFirstName" parameterType="java.lang.String" resultType="me.syaokyo.entity.Student">
+        select * from studentInfo where stuName like '${value}%'
+    </select>
+    <insert id="addStudent" parameterType="me.syaokyo.entity.Student">
+        insert into studentInfo values(#{stuNo},#{stuName},#{stuSex},#{stuAge})
+    </insert>
+    <delete id="deleteStudentById" parameterType="java.lang.String">
+        delete from studentInfo where stuNo=#{stuNo}
+    </delete>
+    <update id="updateStudentById" parameterType="me.syaokyo.entity.Student">
+        update studentInfo set stuName=#{stuName},stuSex=#{stuSex},stuAge=#{stuAge} where stuNo=#{stuNo}
+    </update>
+</mapper>
