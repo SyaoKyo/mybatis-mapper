@@ -31,7 +31,7 @@
 ### 3.2 示例程序结构
 
 <div align=center>
-   <img src="./pic/mapper结构.png" alt="mapper结构" />
+   <img src="./pic/mapper结构.PNG" alt="mapper结构" />
 </div>
 
 
@@ -41,12 +41,12 @@
 1. 创建web项目，导入所需的jar包：
 
 <div align=center>
-   <img src="./pic/导入jar包.png" alt="导入jar包" />
+   <img src="./pic/导入jar包.PNG" alt="导入jar包" />
 </div>
 
 1. 创建所需的包结构及所需文件
    <div align=center>
-   <img src="./pic/结构.png" alt="结构" />
+   <img src="./pic/结构.PNG" alt="结构" />
    </div>
 
    1. 在src目录下创建SqlMapConfig.xml文件，文件内容如下：
@@ -291,19 +291,19 @@
 2. 在数据库中创建表
 
 <div align=center>
-   <img src="./pic/数据库.png" alt="数据库" />
+   <img src="./pic/数据库.PNG" alt="数据库" />
 </div>
 
 1. 在表中添加数据
 
 <div align=center>
-   <img src="./pic/表中数据.png" alt="表中数据" />
+   <img src="./pic/表中数据.PNG" alt="表中数据" />
 </div>
 
 ## 4 运行结果
 
 <div align=center>
-   <img src="./pic/运行结果.png" alt="运行结果" />
+   <img src="./pic/运行结果.PNG" alt="运行结果" />
 </div>
 ​      
 
